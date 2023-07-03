@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shader-art-page-one-react/static/css/main.4af354a7.css",
+    "main.js": "/shader-art-page-one-react/static/js/main.0b9fccb2.js",
+    "static/js/787.a21d59da.chunk.js": "/shader-art-page-one-react/static/js/787.a21d59da.chunk.js",
+    "index.html": "/shader-art-page-one-react/index.html",
+    "main.4af354a7.css.map": "/shader-art-page-one-react/static/css/main.4af354a7.css.map",
+    "main.0b9fccb2.js.map": "/shader-art-page-one-react/static/js/main.0b9fccb2.js.map",
+    "787.a21d59da.chunk.js.map": "/shader-art-page-one-react/static/js/787.a21d59da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4af354a7.css",
+    "static/js/main.0b9fccb2.js"
+  ]
+}
