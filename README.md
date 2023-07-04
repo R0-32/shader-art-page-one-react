@@ -1,3 +1,35 @@
+Шоу: https://r0-32.github.io/shader-art-page-one-react/
+Реп: https://github.com/R0-32/shader-art-page-one-react
+
+Использовал: гпт и короткий ролик на ю2б подготовленный с помощью нейронки.
+
+Результат: Одна страничка на реакт с вложенным кодом на   webgl, генерирующая 2д анимацию.
+
+Из интересного:
+Чтобы поставить реакт и ноду на Дебиан 11. Использовал не официальный сайт. И на всякий установил opengl шейдеры. Рецепт вышел такой:
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential curl
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
+npm install gl-react@^4.0.0 gl-react-dom@^4.0.0
+npm install --save-dev glslify glslify-loader
+sudo npm install -g create-react-app
+npx create-react-app shader-project
+
+а для того чтобы оно отображалось на гхпейджес
+// package.json
+"homepage": "https://R0-32.github.io/shader-art-page-one-react"
+// в раздел scripts:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+// terminal
+npm install --save-dev gh-pages
+git branch gh-pages
+git checkout gh-pages
+npm run deploy
+
 # Shader Art Gallery
 
 Этот проект представляет собой интерактивную галерею, использующую WebGL и шейдеры для создания впечатляющих визуальных эффектов. Каждое изображение в галерее генерируется с помощью фрагментного шейдера, что позволяет создавать уникальные и динамичные композиции.
